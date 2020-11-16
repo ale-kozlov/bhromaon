@@ -18,7 +18,7 @@ html {
 }
 
 body {
-  min-width: 425px;
+  min-width: 320px;
   font-family: "Josefin Sans", Arial, sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -35,7 +35,11 @@ body {
     margin: 0 15px;
   }
   @media screen and (max-width: 600px) {
-    padding: 20px;
+    padding: 20px 15px;
+    margin: 0 auto;
+  }
+  @media screen and (max-width: 425px) {
+    padding: 15px 5px;
   }
 }
 
@@ -114,6 +118,10 @@ body {
     text-transform: uppercase;
     margin: 0;
     padding: 85px 0 10px;
+
+    @media screen and (max-width: 850px) {
+      font-size: 32px;
+    }
   }
   &__subtitle {
     font-family: "Josefin Sans", Arial, sans-serif;
@@ -123,6 +131,10 @@ body {
     letter-spacing: .3em;
     color: $header-footer-text-color;
     text-transform: capitalize;
+
+    @media screen and (max-width: 850px) {
+      font-size: 16px;
+    }
   }
   &__form {
     width: 650px;
@@ -148,7 +160,6 @@ body {
     &::-ms-clear {
       padding: 10px;
     }
-
     &::placeholder {
       color: #999;
       letter-spacing: .2em;
@@ -169,12 +180,25 @@ body {
     right: 0;
     width: 146px;
     height: 56px;
+
+    @media screen and (max-width: 520px) {
+      width: 56px;
+    }
+  }
+  &__btn-name {
+    @media screen and (max-width: 520px) {
+      display: none;
+    }
   }
   &__search {
     position: absolute;
     top: 50%;
     right: 12px;
     transform: translateY(-50%);
+
+    @media screen and (max-width: 520px) {
+      right: 30%;
+    }
   }
   &__scroll {
     text-decoration: none;
@@ -210,9 +234,9 @@ body {
   @media screen and (max-width: 850px) {
     position: fixed;
     padding: 0 30px 0 10px;
-    width: 100vw;
+    width: 100%;
   }
-  &__inner {
+  .inner {
     padding: 32px 0 30px;
     display: flex;
     justify-content: space-between;
@@ -270,7 +294,7 @@ body {
   #hamburger:checked + .nav__menu-field {
     position: absolute;
     top: 22px;
-    right: 44px;
+    right: 32px;
     .nav__menu-btn {
       background-color: transparent;
       transform: rotate(180deg);
@@ -412,8 +436,13 @@ body {
     width: 43%;
 
     @media screen and (max-width: 580px) {
-      width: 90%;
+      width: 85%;
       margin-top: 20px;
+    }
+  }
+  &__break {
+    @media screen and (max-width: 580px) {
+      display: none;
     }
   }
   &__image-1 {
@@ -516,7 +545,7 @@ body {
     @media screen and (max-width: 600px) {
       margin: 0 auto;
       padding: 34px 20px;
-      width: 90%;
+      width: 85%;
     }
     &--even {
       position: absolute;
