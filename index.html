@@ -6,6 +6,7 @@
   <meta name="keywords" content="Traveling, hiking, mountains, nature">
   <meta name="description" content="The travel site that will take care of your vacation">
   <link rel="icon" href="img/favicon.png"/>
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Bhromaon - safe travel anywhere!</title>
 </head>
@@ -54,83 +55,86 @@
   </div>
 </header>
 
-<section class="nav">
-  <h2 class="visually-hidden">Menu block</h2>
-  <div class="inner nav__inner">
-    <a href="javascript:void(0);" class="nav__logo logo">Bhromaon</a>
-    <input class="nav__default-btn" type="checkbox" id="hamburger">
-    <label class="nav__menu-field" for="hamburger">
-      <span class="nav__menu-btn"></span>
-    </label>
-    <nav class="nav__menu">
-      <h3 class="visually-hidden">Main navigation</h3>
-      <ul class="nav__list">
-        <li class="nav__item">
-          <a class="nav__menu-link" href="#about">Who we are</a>
+<main>
+  <h1 class="visually-hidden">Main information</h1>
+
+  <section class="nav">
+    <h2 class="visually-hidden">Menu block</h2>
+    <div class="inner nav__inner">
+      <a href="javascript:void(0);" class="nav__logo logo">Bhromaon</a>
+      <input class="nav__default-btn" type="checkbox" id="hamburger">
+      <label class="nav__menu-field" for="hamburger">
+        <span class="nav__menu-btn"></span>
+      </label>
+      <nav class="nav__menu">
+        <h3 class="visually-hidden">Main navigation</h3>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__menu-link" href="#about">Who we are</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__menu-link" href="#advantage">What we do</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__menu-link" href="#preference">Travel with us</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__menu-link" href="#review">Contact us</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+
+  <section id="about" class="about" style="background: url('img/about-bg.jpg') no-repeat top center / cover">
+    <div class="inner">
+      <div class="about__text-column">
+        <h2 class="about__title title">Why choose us</h2>
+        <p class="about__text about__text-1">
+          Tion and dislike men who are so beguiled and demoralized by desire by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee.</p>
+        <br class="about__break">
+        <p class="about__text about__text-2">
+          Ddislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that.
+        </p>
+        <a href="javascript:void(0);" class="about__btn btn">Explore places</a>
+      </div>
+      <div class="about__image-column">
+        <img src="img/river-and-house.jpg" alt="River and house" class="about__image about__image-1" width="350" height="220">
+        <img src="img/mountains.jpg" alt="Mountains" class="about__image about__image-2" width="350" height="220">
+      </div>
+    </div>
+  </section>
+
+  <section id="advantage" class="advantage">
+    <div class="inner">
+      <h2 class="visually-hidden">Advantages</h2>
+      <svg class="advantage__shape" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 775.035 96.84">
+        <use xlink:href="#shape"/>
+      </svg>
+      <ul class="advantage__list">
+        <li class="advantage__item">
+          <svg class="advantage__icon advantage__icon--loupe" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.531 56.53" width="56.531" height="56.53">
+            <use xlink:href="#loupe"/>
+          </svg>
+          <h3 class="advantage__title">Search places</h3>
         </li>
-        <li class="nav__item">
-          <a class="nav__menu-link" href="#advantage">What we do</a>
+        <li class="advantage__item">
+          <svg class="advantage__icon advantage__icon--check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 59.907 59.91" width="59.907" height="59.91">
+            <use xlink:href="#check"/>
+          </svg>
+          <h3 class="advantage__title">Select places</h3>
         </li>
-        <li class="nav__item">
-          <a class="nav__menu-link" href="#preference">Travel with us</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__menu-link" href="#review">Contact us</a>
+        <li class="advantage__item">
+          <svg class="advantage__icon advantage__icon--like" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61.31 58.79" width="61.31" height="58.79">
+            <use xlink:href="#like"/>
+          </svg>
+          <h3 class="advantage__title">Book & enjoy</h3>
         </li>
       </ul>
-    </nav>
-  </div>
-</section>
-
-<section id="about" class="about" style="background: url('img/about-bg.jpg') no-repeat top center / cover">
-  <div class="inner">
-    <div class="about__text-column">
-      <h2 class="about__title title">Why choose us</h2>
-      <p class="about__text about__text-1">
-        Tion and dislike men who are so beguiled and demoralized by desire by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee.</p>
-      <br class="about__break">
-      <p class="about__text about__text-2">
-        Ddislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that.
-      </p>
-      <a href="javascript:void(0);" class="about__btn btn">Explore places</a>
     </div>
-    <div class="about__image-column">
-      <img src="img/river-and-house.jpg" alt="River and house" class="about__image about__image-1" width="350" height="220">
-      <img src="img/mountains.jpg" alt="Mountains" class="about__image about__image-2" width="350" height="220">
-    </div>
-  </div>
-</section>
+  </section>
 
-<section id="advantage" class="advantage">
-  <div class="inner">
-    <h2 class="visually-hidden">Advantages</h2>
-    <svg class="advantage__shape" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 775.035 96.84">
-      <use xlink:href="#shape"/>
-    </svg>
-    <ul class="advantage__list">
-      <li class="advantage__item">
-        <svg class="advantage__icon advantage__icon--loupe" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.531 56.53" width="56.531" height="56.53">
-          <use xlink:href="#loupe"/>
-        </svg>
-        <h3 class="advantage__title">Search places</h3>
-      </li>
-      <li class="advantage__item">
-        <svg class="advantage__icon advantage__icon--check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 59.907 59.91" width="59.907" height="59.91">
-          <use xlink:href="#check"/>
-        </svg>
-        <h3 class="advantage__title">Select places</h3>
-      </li>
-      <li class="advantage__item">
-        <svg class="advantage__icon advantage__icon--like" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61.31 58.79" width="61.31" height="58.79">
-          <use xlink:href="#like"/>
-        </svg>
-        <h3 class="advantage__title">Book & enjoy</h3>
-      </li>
-    </ul>
-  </div>
-</section>
-
-<section id="preference" class="preference">
+  <section id="preference" class="preference">
     <h2 class="visually-hidden">Preferences</h2>
     <div class="preference__section preference__section--odd"
          style="background: url('img/preference-bg-1.jpg') no-repeat top center / cover">
@@ -154,22 +158,23 @@
         </div>
       </div>
     </div>
-</section>
+  </section>
 
-<section id="review" class="review" style="background: url('img/review-bg.jpg') no-repeat top center / cover">
-  <div class="inner">
-    <h2 class="review__title title">What our tourist say</h2>
-    <div class="review__container">
-      <img src="img/man-in-mountains.jpg" alt="Man in the mountains" width="445" height="284" class="review__image">
-      <blockquote class="review__blockquote">
-        <h3 class="review__author">Sam Sumon</h3>
-        <p class="review__text">
-          <i class="fas fa-quote-left"></i>
-          But I must explain to you how all this mistaken idea of account to denouncing pleasure and praising pain. But I must explain to you how all this mistaken idea of account to nai denouncing pleasure and praising pain was account born and I account will give you a complete account of the system was account born and I account will give you a nai the complete account of the system.</p>
-      </blockquote>
+  <section id="review" class="review" style="background: url('img/review-bg.jpg') no-repeat top center / cover">
+    <div class="inner">
+      <h2 class="review__title title">What our tourist say</h2>
+      <div class="review__container">
+        <img src="img/man-in-mountains.jpg" alt="Man in the mountains" width="445" height="284" class="review__image">
+        <blockquote class="review__blockquote">
+          <h3 class="review__author">Sam Sumon</h3>
+          <p class="review__text">
+            <i class="fas fa-quote-left"></i>
+            But I must explain to you how all this mistaken idea of account to denouncing pleasure and praising pain. But I must explain to you how all this mistaken idea of account to nai denouncing pleasure and praising pain was account born and I account will give you a complete account of the system was account born and I account will give you a nai the complete account of the system.</p>
+        </blockquote>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+</main>
 
 <footer class="footer">
   <div class="inner">
